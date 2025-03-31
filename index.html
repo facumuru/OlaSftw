@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OlasoftWare.net</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/OlaSoft.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/OlaSoft.png" alt="OlasoftWare.net">
+            <span>OlaSoftWare.net</span>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Redes <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.instagram.com/olasoftware/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61575046970464" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://wa.me/tunumerowhatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="hero">
+        <h1 class="animate-on-scroll fade-in-up">Soluciones Digitales a Medida</h1>
+        <p class="animate-on-scroll fade-in-up" style="transition-delay: 0.2s">Transformamos tus ideas en realidades digitales con tecnología de vanguardia</p>
+        <a href="#contact" class="cta-button animate-on-scroll fade-in-up" style="transition-delay: 0.4s">Contáctanos</a>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about">
+        <h2 class="section-title animate-on-scroll fade-in">Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll fade-in-left">
+                <p>Somos un equipo apasionado por la tecnología y la innovación, comprometidos en desarrollar soluciones digitales que potencien negocios y simplifiquen procesos. Creemos en la excelencia, la creatividad y el trabajo en equipo para ofrecer productos de calidad que marquen la diferencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services">
+        <h2 class="section-title animate-on-scroll fade-in">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card animate-on-scroll fade-in-up">
+                <div class="service-icon">💻</div>
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios web modernos y responsivos.</p>
+            </div>
+            <div class="service-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s">
+                <div class="service-icon">📱</div>
+                <h3>Aplicaciones Móviles</h3>
+                <p>Desarrollo de apps nativas e híbridas.</p>
+            </div>
+            <div class="service-card animate-on-scroll fade-in-up" style="transition-delay: 0.4s">
+                <div class="service-icon">🔍</div>
+                <h3>Consultoría IT</h3>
+                <p>Asesoramiento especializado en tecnología.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <h2 class="section-title animate-on-scroll fade-in">Contacto</h2>
+        <div class="contact-container animate-on-scroll fade-in-up">
+            <form id="contact-form" action="https://formspree.io/f/mblgaenr" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+            <div id="form-status"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content animate-on-scroll fade-in">
+            <p class="copyright">© 2023 OlasoftWare.net</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
