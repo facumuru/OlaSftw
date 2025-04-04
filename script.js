@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    // Menú principal móvil
+    // Menú principal móvil (full-screen)
     menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('show');
         this.innerHTML = navMenu.classList.contains('show') ? '✕' : '☰';
